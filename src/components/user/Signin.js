@@ -27,7 +27,7 @@ export default class Signin extends Component {
     onSubmit = async (e)=>{
         e.preventDefault();
         const {username,passwd} = this.state;
-        const result = await axios.post("http://localhost:8081/api/v1/usuarios/signin",{
+        const result = await axios.post("/api/v1/usuarios/signin",{
             username,passwd
         });
         
