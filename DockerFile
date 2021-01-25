@@ -3,7 +3,7 @@ FROM node as build-stage
 
 WORKDIR /var/app
 
-COPY package*.json /var/app/
+COPY package.json /var/app/
 
 RUN npm install
 
